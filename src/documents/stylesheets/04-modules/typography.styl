@@ -1,0 +1,16 @@
+body
+  font 100%/1.5 "Helvetica Neue",sans-serif
+  @media min-large
+    font-size 120%
+
+heading-scale( 1.315, 1.5, 0, 0)
+
+$font-weight
+  font-weight 200
+  line-height 1.2
+
+h1, h2, h3, h4, h5, h6
+  @extend $font-weight
+
+p
+  @extend $vertical_spacing.text
