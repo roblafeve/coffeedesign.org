@@ -14,6 +14,10 @@ section.layout-content-wrapper#events
   .layout-content
     h2 Events
     p.heading-intro Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
+    - for event in getCollection('events').toJSON()
+      a(href=event.url, title=event.title)
+        h2= event.title
+        p= event.humanDate
 section.layout-content-wrapper.sub-background#about
   .layout-content
     h2 About Us

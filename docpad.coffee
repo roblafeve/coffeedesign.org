@@ -3,6 +3,7 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
+
 	plugins:  # example
     # Disable NIB within the Stylus Plugin
     stylus:
@@ -10,6 +11,17 @@ docpadConfig = {
         nib: true
       stylusOptions:
         compress: true
+
+    moment:
+      formats: [
+        {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
+        {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
+      ]
+
+  collections:
+    events: ->   
+      @getCollection("documents").findAllLive({relativeOutDirPath: "events"},[date:-1])
+
 }
 
 # Export the DocPad Configuration

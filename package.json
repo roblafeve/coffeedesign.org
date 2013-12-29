@@ -16,6 +16,8 @@
   "devDependencies": {
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-stylus": "~2.5.0",
-    "docpad-plugin-ghpages": "~2.4.1"
+    "docpad-plugin-ghpages": "~2.4.1",
+    "docpad-plugin-marked": "~2.1.2",
+    "docpad-plugin-moment": "~2.0.2"
   }
 }

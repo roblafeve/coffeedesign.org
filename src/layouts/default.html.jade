@@ -7,12 +7,15 @@ html(lang="en")
     meta(content='initial-scale = 1.0, user-scalable = no, width = device-width, height = device-height', name='viewport')
     meta(content='yes', name='apple-mobile-web-app-capable')
     != getBlock('meta').toHTML()
-    != getBlock("styles").add(["stylesheets/master.css"]).toHTML()
+    != getBlock("styles").add(["/stylesheets/master.css"]).toHTML()
   body
     header.layout-header
-      h1.logo Coffee & Design
-      nav
-        p Navitation
+      .layout-header-logo
+        img.logo(src='/images/logo-coffeedesign.svg')
+        h1.logo-text Coffee & Design
+      .layout-header-nav
+        nav
+          p Navitation
     main.layout-site_content
       != content
     footer.layout-site_footer
