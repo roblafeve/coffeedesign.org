@@ -3,40 +3,66 @@ title: Coffee & Design
 layout: default
 isPage: true
 ---
-
-section.layout-content-wrapper.sub-background#signup
-  .layout-content
-    h2.sub-heading Connecting Design Professionals in Kansas City
-    form
-      input(type="text")
-      input(type="submit")
-section.layout-content-wrapper#events
+.waypoint#events
+section.layout-content-wrapper
   .layout-content
     h2 Events
-    p.heading-intro Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
+    hr
+    p.sub_heading Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
     - for event in getCollection('events').toJSON()
-      a(href=event.url, title=event.title)
+      a(href=site.url + event.url, title=event.title)
         h2= event.title
         p= event.humanDate
-section.layout-content-wrapper.sub-background#about
+.waypoint#about        
+section.layout-content-wrapper.sub-background
   .layout-content
     h2 About Us
-    p.heading-intro Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
+    hr
+    p.sub_heading Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse, maxime, est placeat ab impedit eius porro laborum a odio non facilis omnis saepe voluptatum velit dolorum commodi numquam ipsum!
-section.layout-content-wrapper#sponsors
+.waypoint#sponsors
+section.layout-content-wrapper
   .layout-content
     h2 Sponsors
-    p.heading-intro Coffee & Design wouldn't be able to happen as smoothly as it does without all the wonderful support.
+    hr
+    p.sub_heading Coffee & Design wouldn't be able to happen as smoothly as it does without all the wonderful support.
     p If you're interested in sponsoring, please contact us!
-section.layout-content-wrapper.sub-background#organizers
+.waypoint#organizers
+section.layout-content-wrapper.sub-background
   .layout-content
     h2 Organiziers
-    p.heading-intro The mugs behind the mug.
-section.layout-content-wrapper#contact
+    hr
+    p.sub_heading The mugs behind the mug.
+    .organizer
+      .organizer-avatar
+        img.avatar(src= site.url + "/images/kelly_tomlinson.jpg")
+      .organizer-info
+        h3 Kelly Tomlinson
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, tenetur, sapiente, cum, neque sunt harum qui nisi amet rerum voluptatibus dignissimos totam soluta excepturi voluptatem id nobis laborum vero nemo!
+        p
+          a.icon(href="http://twitter.com/kellytdesign")
+            span.icon-glyph.sub-twitter
+            span.icon-text @kellytdesign
+    .organizer
+      .organizer-avatar
+        img.avatar(src= site.url + "/images/rob_lafeve.jpg")
+      .organizer-info
+        h3 Rob LaFeve
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, tenetur, sapiente, cum, neque sunt harum qui nisi amet rerum voluptatibus dignissimos totam soluta excepturi voluptatem id nobis laborum vero nemo!
+        p
+          a.icon.sub-twitter(href="http://twitter.com/roblafeve")
+            span.icon-glyph.sub-twitter
+            span.icon-text @roblafeve
+.waypoint#contact
+section.layout-content-wrapper
   .layout-content
     h2 Contact Us
-    p.heading-intro Direct any questions, suggestions, or feedback our way!
+    hr
+    p.sub_heading Direct any questions, suggestions, or feedback our way!
     p Don't forget to sign up for the newsletter to be the first to know about our events!
     form
-      input(type="text")
-      input(type="submit")
+      .form-fields
+        .form-fields-field.sub-primary
+          input(type="email", placeholder="Your email address...")
+        .form-fields-field
+          input(type="submit")

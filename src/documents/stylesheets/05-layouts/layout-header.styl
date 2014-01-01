@@ -1,9 +1,16 @@
 .layout-header
   @extend $grid
+  z-index 1
   border-spacing unit(0.75)
-  position fixed
+  position -webkit-sticky
+  position -moz-sticky
+  position -ms-sticky
+  position -o-sticky
+  top 0
+  overflow hidden
 
   background white
+  border-bottom 1px solid darken(white, 5)
 
   > *
     vertical-align middle

@@ -18,6 +18,8 @@
     "docpad-plugin-stylus": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.1",
     "docpad-plugin-marked": "~2.1.2",
-    "docpad-plugin-moment": "~2.0.2"
+    "docpad-plugin-moment": "~2.0.2",
+    "docpad-plugin-cleanurls": "~2.6.0",
+    "docpad-plugin-coffeescript": "~2.2.3"
   }
 }

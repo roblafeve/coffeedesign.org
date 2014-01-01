@@ -1,0 +1,17 @@
+.organizer
+  @extend $grid
+  @extend $vertical_spacing.double
+  border-spacing unit(1.2) 0
+  
+  &:nth-child(odd)
+    direction rtl
+    .organizer-info
+      text-align right
+
+
+.organizer-avatar
+  width unit(5)
+  padding-top unit(0.25)
+
+.organizer-info
+  text-align left

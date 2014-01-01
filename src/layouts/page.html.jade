@@ -1,0 +1,9 @@
+!!!
+html(lang="en")
+  include partial/head
+  body
+    include partial/header
+    main.layout-site_content
+      != content
+    include partial/footer
+    != getBlock('scripts').toHTML()

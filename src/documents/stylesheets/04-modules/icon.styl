@@ -1,41 +1,46 @@
 .icon
-  @extend $grid
-
-  font-family 'roblafeve'
-  speak none
+  @extend $grid.inline
+  border-spacing unit(0.25) 0
+  margin 0 (- unit(0.25))
+  font-weight 700
   font-style normal
-  font-weight normal
   font-variant normal
   text-transform none
   text-decoration none
-  line-height 1
   color inherit
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
+.icon-glyph
+  font-style normal
+  font-variant normal
+  text-transform none
+  text-decoration none
+  color inherit
+  vertical-align middle
 
-  &.sub-mail:before {
-    content: "\e600";
-  }
-  &.sub-vcard:before {
-    content: "\e601";
-  }
-  &.sub-github:before {
-    content: "\e602";
-  }
-  &.sub-twitter:before {
-    content: "\e603";
-  }
-  &.sub-uniE604:before {
-    content: "\e604";
-  }
-  &.sub-arrow-left:before {
-    content: "\e605";
-  }
-  &.sub-text:before {
-    content: "\e606";
-  }
-  &.sub-text2:before {
-    content: "\e607";
-  }
+  &:before
+    font-family 'coffeedesign'
+    speak none
+    font-size 1.5em
+    font-style normal
+    font-weight normal
+    font-variant normal
+    text-transform none
+    text-decoration none
+    line-height 1
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+  &.sub-mail:before
+    content "\e600"
+
+  &.sub-twitter:before
+    content "\e601"
+
+  &.sub-facebook:before
+    content "\e602"
+
+.icon-text
+  line-height 1
+  vertical-align middle
