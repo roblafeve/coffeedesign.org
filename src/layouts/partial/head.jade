@@ -5,4 +5,4 @@ head
   meta(content='initial-scale = 1.0, user-scalable = no, width = device-width, height = device-height', name='viewport')
   meta(content='yes', name='apple-mobile-web-app-capable')
   != getBlock('meta').toHTML()
-  != getBlock("styles").add([ site.url + "/stylesheets/master.css"]).toHTML()
+  != getBlock("styles").add([ site.url + "/stylesheets/master.css", "http://fonts.googleapis.com/css?family=Montserrat:700|Merriweather:300italic|Lato"]).toHTML()
