@@ -1,11 +1,18 @@
+.waypoint#home
 section.layout-content-wrapper.sub-background#signup
   .layout-content
     h1.logo-text Coffee & Design
     img.logo-large(src= site.url + '/images/logo-coffeedesign-large.svg')
     p.sub_heading Connecting Designers in Kansas City
-    form
+    form#mc-embedded-subscribe-form.validate(action='http://coffeedesign.us3.list-manage1.com/subscribe/post?u=73a0928dffdd7ea5920f5069c&id=1a612aa5f1', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
       .form-fields
         .form-fields-field.sub-primary
-          input.sub-white(type="email", placeholder="Your email address...")
+          input.sub-white#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="Your email address...")
+        #mce-responses.clear(style='display: none;')
+          #mce-error-response.response(style='display: none;')
+          #mce-success-response.response(style='display: none;')
+        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        div(style='position: absolute; left: -5000px; display: none')
+          input(type='text', name='b_73a0928dffdd7ea5920f5069c_1a612aa5f1', value='')
         .form-fields-field
-          input.sub-white(type="submit", value="Stay in touch")
+          input.sub-white#mc-embedded-subscribe.button(type='submit', value='Stay in touch', name='subscribe')
