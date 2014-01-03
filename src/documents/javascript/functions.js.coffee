@@ -1,4 +1,14 @@
 $ ->
+
+  $("a#nav-toggle").click ->
+    $(".navigation.sub-mobile, a#nav-toggle").toggleClass("open")
+    false
+
+  $(".navigation.sub-mobile a, .layout-header-logo a").click ->
+    if $("a#nav-toggle").hasClass("open")
+      $(".navigation.sub-mobile, a#nav-toggle").toggleClass("open")
+    false
+
   $("a[href*=#]:not([href=#])").click ->
     if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
       target = $(@hash)

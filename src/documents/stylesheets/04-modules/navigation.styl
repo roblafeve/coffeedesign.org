@@ -2,13 +2,45 @@
   display inline-table
   table-layout normal
   width auto
+  margin 0 (- unit())
   border-spacing unit() 0
   text-transform uppercase
-
+  font-weight 200
+  color teal
+  
   > *
+    @extend $transition.sub-fast
     display table-cell
 
   a
     text-decoration none
     color inherit
+    @media max-medium
+      display none
 
+  &.sub-mobile
+    display none
+    @media max-medium
+      @extend $transition
+      transform translateY(-150%)
+      background white
+      position fixed
+      z-index 1
+      display table
+      top 4.9em
+      width 100%
+      margin 0
+      border-spacing 0
+      &.open
+        transform translateY(0%)
+    > *
+      display block
+      padding unit(1)
+
+#nav-toggle
+  display none
+  @media max-medium
+    display table-cell
+    padding-top 0.35em
+  &.open
+    transform rotateX(180deg) translateY(-0.2em)

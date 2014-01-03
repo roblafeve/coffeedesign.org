@@ -23,6 +23,7 @@ $form_base
   font-weight 500
 
 $skin-text_box
+  -webkit-appearance none
   transition box-shadow 0.25s ease-in-out
   outline none
   border none
@@ -110,15 +111,15 @@ input[type="password"]
   &.sub-white
     @extend $skin-text_box.sub-white
 
-input[type="radio"] 
-input[type="range"] 
-input[type="reset"] 
+input[type="radio"] {}
+input[type="range"] {}
+input[type="reset"] {}
 input[type="search"] 
   @extend $skin-text_box
   &.sub-white
     @extend $skin-text_box.sub-white
 
-input[type="step"] 
+input[type="step"] {}
 input[type="submit"]
   @extend $skin-text_box
   color white

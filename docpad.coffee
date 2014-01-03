@@ -32,7 +32,7 @@ docpadConfig = {
     static:
       templateData:
         site:
-          url: 'http://roblafeve.github.io/coffeedesign.org'
+          url: 'http://kc.coffeedesign.org'
 }
 
 # Export the DocPad Configuration

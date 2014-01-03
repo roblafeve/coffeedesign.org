@@ -6,12 +6,12 @@
 
 .layout-content-wrapper
   background-color gray
+  overflow hidden
 
   &.sub-background
     position relative
     color white
     background-color transparent
-    overflow hidden
     &:before
       // @animation background_shift 60s infinite alternate ease-in-out
       content ""
@@ -28,7 +28,7 @@
 
 .layout-content
   @extend $padding
-  max-width unit(30)
+  max-width unit(33.33)
   margin 0 auto
 
   text-align center

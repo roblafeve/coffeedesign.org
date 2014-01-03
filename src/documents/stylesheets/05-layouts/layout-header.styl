@@ -1,15 +1,13 @@
 .layout-header
+
+  // Stuff
   @extend $grid
-  table-layout auto
-  z-index 1
   border-spacing unit(0.75)
-  position -webkit-sticky
-  position -moz-sticky
-  position -ms-sticky
-  position -o-sticky
-  top 0
+  position fixed
+  z-index 2
   overflow hidden
 
+  // Background
   background white
   border-bottom 1px solid darken(white, 5)
 
@@ -17,8 +15,9 @@
     vertical-align middle
 
 .layout-header-logo
-  padding-bottom unit(0.4)
-  width unit(8)
+  padding-bottom 0.7em
+  width 13em
 
 .layout-header-nav
   text-align right
+  padding-top 0.2em

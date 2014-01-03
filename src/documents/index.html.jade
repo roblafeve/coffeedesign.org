@@ -3,30 +3,48 @@ title: Coffee & Design
 layout: default
 isPage: true
 ---
+.waypoint#home
+section.layout-content-wrapper.sub-background#signup
+  .layout-content
+    img.logo-large(src= site.url + '/images/icon-coffeedesign.svg')
+    h1.sub-title Connect. Inspire. Learn. Grow.
+    p.sub_heading Coffee & Design is a free, monthly event to connect design professionals in Kansas City.
+    form#mc-embedded-subscribe-form.validate(action='http://coffeedesign.us3.list-manage1.com/subscribe/post?u=73a0928dffdd7ea5920f5069c&id=1a612aa5f1', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
+      .form-fields
+        .form-fields-field.sub-primary
+          input.sub-white#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="Your email address...")
+        #mce-responses.clear(style='display: none;')
+          #mce-error-response.response(style='display: none;')
+          #mce-success-response.response(style='display: none;')
+        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        div(style='position: absolute; left: -5000px; display: none')
+          input(type='text', name='b_73a0928dffdd7ea5920f5069c_1a612aa5f1', value='')
+        .form-fields-field
+          input.sub-white#mc-embedded-subscribe.button(type='submit', value='Stay in touch', name='subscribe')
 .waypoint#events
 section.layout-content-wrapper
   .layout-content
-    h2 Events
+    h2 Upcoming Events
     hr
-    p.sub_heading Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
+    p.sub_heading The last Friday morning of every month features a 
     - for event in getCollection('events').toJSON()
-      a(href=site.url + event.url, title=event.title)
-        h2= event.title
-        p= event.humanDate
+      h2= event.title
+      p= event.humanDate
+      if event.link
+        a(href=event.link) Register
 .waypoint#about        
 section.layout-content-wrapper.sub-background
   .layout-content
-    h2 About Us
+    h2 About
     hr
-    p.sub_heading Coffee & Design is a monthly event set out to connect, grow, and inspire design professionals in Kansas City. 
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, esse, maxime, est placeat ab impedit eius porro laborum a odio non facilis omnis saepe voluptatum velit dolorum commodi numquam ipsum!
+    p.sub_heading Coffee & Design was born out of a desire to be able to connect with more designers in Kansas City.
+    p Weather you're focused on branding, products, experiences, interfaces, identity, print, media, illustration, lettering, or anything in between; Coffee & Design is aimed to connect you with like-minded designers to expand your network, be inspired by, and learn from one other.
 .waypoint#sponsors
 section.layout-content-wrapper
   .layout-content
     h2 Sponsors
     hr
-    p.sub_heading Coffee & Design wouldn't be able to happen as smoothly as it does without all the wonderful support.
-    p If you're interested in sponsoring, please contact us!
+    p.sub_heading Coffee & Design wouldn't be able to happen without the support of these fine folks.
 .waypoint#organizers
 section.layout-content-wrapper.sub-background
   .layout-content
@@ -38,7 +56,7 @@ section.layout-content-wrapper.sub-background
         img.avatar(src= site.url + "/images/kelly_tomlinson.jpg")
       .organizer-info
         h3 Kelly Tomlinson
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, tenetur, sapiente, cum, neque sunt harum qui nisi amet rerum voluptatibus dignissimos totam soluta excepturi voluptatem id nobis laborum vero nemo!
+        p Kelly Tomlinson is a designer focused on UI & UX, branding, and solving problems; with an undying appreciation for print and package design. She is currently slinging pixels at Cremalab, the Kansas City Chapter Director of Startup Grind, and a KC Startup Weekend organizer. Kelly eats too much Chipotle, watches too many movies, says thank you a lot, and believes in small wins. You can learn more about her at <a href="http://kellytdesign.com">kellytdesign.com</a>
         p
           a.icon(href="http://twitter.com/kellytdesign")
             span.icon-glyph.sub-twitter
@@ -48,7 +66,7 @@ section.layout-content-wrapper.sub-background
         img.avatar(src= site.url + "/images/rob_lafeve.jpg")
       .organizer-info
         h3 Rob LaFeve
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, tenetur, sapiente, cum, neque sunt harum qui nisi amet rerum voluptatibus dignissimos totam soluta excepturi voluptatem id nobis laborum vero nemo!
+        p Rob LaFeve is a web designer and developer in Kansas City.
         p
           a.icon(href="http://twitter.com/roblafeve")
             span.icon-glyph.sub-twitter
@@ -61,21 +79,27 @@ section.layout-content-wrapper
     p.sub_heading Direct any questions, suggestions, or feedback our way!
     .links
       .link
-        a.icon(href="http://twitter.com/roblafeve")
+        a.icon(href="mailto:hello@coffeedesign.org")
           span.icon-glyph.sub-mail
           span.icon-text hello@coffeedesign.org
       .link
-        a.icon(href="http://twitter.com/roblafeve")
+        a.icon(href="http://twitter.com/kccoffeedesign")
           span.icon-glyph.sub-twitter
           span.icon-text @kcCoffeeDesign
       .link
-        a.icon(href="http://twitter.com/roblafeve")
+        a.icon(href="https://www.facebook.com/pages/Coffee-Design/632654520119549")
           span.icon-glyph.sub-facebook
-          span.icon-text kcoffeedesign
+          span.icon-text Coffee-Design
     p Don't forget to sign up for the newsletter to be the first to know about our events!
-    form
+    form#mc-embedded-subscribe-form.validate(action='http://coffeedesign.us3.list-manage1.com/subscribe/post?u=73a0928dffdd7ea5920f5069c&id=1a612aa5f1', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='novalidate')
       .form-fields
         .form-fields-field.sub-primary
-          input(type="email", placeholder="Your email address...")
+          input#mce-EMAIL.required.email(type='email', value='', name='EMAIL', placeholder="Your email address...")
+        #mce-responses.clear(style='display: none;')
+          #mce-error-response.response(style='display: none;')
+          #mce-success-response.response(style='display: none;')
+        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+        div(style='position: absolute; left: -5000px; display: none')
+          input(type='text', name='b_73a0928dffdd7ea5920f5069c_1a612aa5f1', value='')
         .form-fields-field
-          input(type="submit")
+          input#mc-embedded-subscribe.button(type='submit', value='Stay in touch', name='subscribe')
