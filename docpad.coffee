@@ -20,7 +20,7 @@ docpadConfig = {
 
   collections:
     events: ->   
-      @getCollection("documents").findAllLive({relativeOutDirPath: "events"},[date:-1])
+      @getCollection("documents").findAllLive({relativeOutDirPath: "events"},[date:1])
 
   # # Environments
 

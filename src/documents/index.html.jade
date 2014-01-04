@@ -11,15 +11,21 @@ section.layout-content-wrapper.sub-background#signup
     p.sub_heading Coffee & Design is a free, monthly event to connect design professionals in Kansas City.
 .waypoint#events
 section.layout-content-wrapper
-  .layout-content
+  .layout-content.sub-wide
     h2 Upcoming Events
     hr
     p.sub_heading The last Friday morning of every month features a 
-    - for event in getCollection('events').toJSON()
-      h2= event.title
-      p= event.humanDate
-      if event.link
-        a(href=event.link) Register
+    .layout-events
+      - var events = getCollection('events').toJSON()
+      - var count = 0
+      - for event in events
+        - if (event.date >= document.date && count <= 1)
+          .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
+            h3= event.title
+            p= event.humanDate
+            if event.link
+              a(href=event.link) Register
+          - count++
 .waypoint#about        
 section.layout-content-wrapper.sub-background
   .layout-content
