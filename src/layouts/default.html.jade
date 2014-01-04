@@ -7,4 +7,4 @@ html(lang="en")
     main.layout-site_content
       != content
     include partial/footer
-    != getBlock('scripts').add([vendor/jquery.js", site.url + "javascript/functions.js"]).toHTML()
+    != getBlock('scripts').add(["vendor/jquery.js", "javascript/functions.js"]).toHTML()

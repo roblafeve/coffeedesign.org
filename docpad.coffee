@@ -22,17 +22,17 @@ docpadConfig = {
     events: ->   
       @getCollection("documents").findAllLive({relativeOutDirPath: "events"},[date:-1])
 
-  # Environments
+  # # Environments
 
-  environments:
-    development:
-      templateData:
-        site:
-          url: 'http://rob.local:9778'
-    static:
-      templateData:
-        site:
-          url: 'http://kc.coffeedesign.org'
+  # environments:
+  #   development:
+  #     templateData:
+  #       site:
+  #         url: 'http://rob.local:9778'
+  #   static:
+  #     templateData:
+  #       site:
+  #         url: 'http://kc.coffeedesign.org'
 }
 
 # Export the DocPad Configuration
