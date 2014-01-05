@@ -14,8 +14,8 @@ docpadConfig = {
 
     moment:
       formats: [
-        {raw: 'date', format: 'MMMM Do YYYY', formatted: 'humanDate'}
-        {raw: 'date', format: 'YYYY-MM-DD', formatted: 'computerDate'}
+        {raw: 'date', format: 'MMMM D, YYYY', formatted: 'humanDate'}
+        {raw: 'date', format: 'H:mm', formatted: 'humanTime'}
       ]
 
   collections:

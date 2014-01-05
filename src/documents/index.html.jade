@@ -21,10 +21,32 @@ section.layout-content-wrapper
       - for event in events
         - if (event.date >= document.date && count <= 1)
           .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
-            h3= event.title
-            p= event.humanDate
-            if event.link
-              a(href=event.link) Register
+            .event-content
+              if event.photo
+                .event-content-photo
+                  .photo.sub-circle(style="background-image: url(images/events/#{event.photo})")
+                    img(src= event.photo)
+              .event-content-info
+                h3.event-title= event.title
+                if event.description
+                  p.event-description= event.description
+                hr.sub-small
+                if event.date
+                  p.event-date
+                    = event.humanDate
+                    br
+                    = event.humanTime + " – 10:00 am"
+                    if event.location
+                      if event.location_link
+                        br
+                        a(href="htt://#{event.location_link}")= event.location
+                      else
+                        br
+                        = event.location
+                      
+                if event.register_link
+                  br
+                  a.button(href="htt://#{event.register_link}") Register
           - count++
 .waypoint#about        
 section.layout-content-wrapper.sub-background

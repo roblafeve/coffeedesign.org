@@ -1,7 +1,41 @@
 .event
-  @extend $padding
-  box-shadow 0 1px 3px rgba(black, 0.5)
-  border-radius unit(0.25)
+  background white
+  box-shadow 0 1px 4px rgba(black, 0.25)
 
   &.sub-primary
-    width 2*(100/3)%
+    text-align left
+    @media (max-width: 59em)
+      text-align center
+
+  &.sub-secondary
+    width unit(15)
+
+    .event-content-photo
+      display none
+
+.event-content 
+  @extend $grid
+  table-layout auto
+  border-spacing unit(2)
+  @media max-large
+    border-spacing unit(1)
+
+  > *
+    @extend $vertical_spacing
+    @media (max-width: 59em)
+      display block
+
+.event-content-photo
+  line-height 0
+  width 2*(100/7)%
+  @media (max-width: 59em)
+    width 100%
+    .photo
+      width 30%
+      @media max-small
+        width 50%
+
+// .event-content-info
+
+.event-date
+  text-transform uppercase

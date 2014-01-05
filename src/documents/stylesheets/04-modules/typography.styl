@@ -9,7 +9,7 @@ heading-scale( 1.315, 1.5, 0, 0)
 h1, h2, h3, h4, h5, h6
   font-family: 'Montserrat', sans-serif;
   text-transform uppercase
-  font-weight 200
+  font-weight 700
   line-height 1.2
 
 h1.sub-title
@@ -20,15 +20,22 @@ p
 
 hr
   @extend $vertical_spacing.text
-  display block
+  display inline-block
   width 60%
   border-style solid
   border-width 1px 0 0
+  margin-bottom -0.4em
+
+  &.sub-small
+    width 20%
 
 .sub_heading
+  @extend h4
+  line-height 1.5
   font-family "Merriweather"
   font-weight 300
   font-style italic
   font-size 1.5em
+  text-transform none
   @media max-small
     font-size 1.2em
