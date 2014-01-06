@@ -29,7 +29,7 @@ section.layout-content-wrapper
               if event.photo && count===0
                 .event-content-photo
                   .photo.sub-circle(style="background-image: url(images/events/#{event.photo})")
-                    img(src= event.photo)
+                    img(src= "images/events/" + event.photo)
               .event-content-info
                 h3.event-title= event.title
                 if event.description
@@ -40,13 +40,13 @@ section.layout-content-wrapper
                     = event.humanDate
                     br
                     = event.humanTime + " – 10:00 am"
-                    if event.location
-                      if event.location_link
+                    if event.location.name
+                      if event.location.link
                         br
-                        a(href="htt://#{event.location_link}")= event.location
+                        a(href="htt://#{event.location.link}")= event.location.name
                       else
                         br
-                        = event.location
+                        = event.location.name
                       
                 if event.register_link
                   br
