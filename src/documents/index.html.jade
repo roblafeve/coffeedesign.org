@@ -21,6 +21,10 @@ section.layout-content-wrapper
       - for event in events
         - if (event.date >= document.date && count <= 1)
           .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
+            if count===0
+              .event-ribbon
+                .ribbon
+                  .ribbon-text This Month
             .event-content
               if event.photo && count===0
                 .event-content-photo

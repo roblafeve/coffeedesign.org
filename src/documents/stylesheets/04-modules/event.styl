@@ -1,4 +1,5 @@
 .event
+  position relative
   background white
   box-shadow 0 1px 4px rgba(black, 0.25)
 
@@ -13,28 +14,17 @@
     .event-content-photo
       display none !important
 
-.event-header
-  position relative
-  padding unit(0.5)
-  margin unit(1)
-  text-align center
-  background teal
-  color white
-  text-transform uppercase
-
-  &:before
-  &:after
-    content ""
-    display block
-    position absolute
-    border-width
+.event-ribbon
+  position absolute
+  top - unit(0.75)
+  left - unit(1.75/4)
 
 .event-content 
   @extend $grid
   table-layout auto
   border-spacing unit(2)
   @media max-large
-    border-spacing unit(1)
+    border-spacing unit(1.5)
 
   > *
     @extend $vertical_spacing
@@ -44,6 +34,7 @@
 .event-content-photo
   line-height 0
   width 2*(100/7)%
+  padding-top unit(0.35)
   @media (max-width: 59em)
     width 100%
     .photo

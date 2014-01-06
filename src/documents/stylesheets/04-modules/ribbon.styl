@@ -1,0 +1,48 @@
+.ribbon
+  position relative
+  z-index 0
+  background teal
+  display table
+  height unit(1.75)
+  font-family 'Montserrat', sans-serif
+  font-weight 700
+  text-transform uppercase
+  text-align center
+  color white
+
+  &:before
+  &:after
+    content ""
+    display block
+    position absolute
+    right - unit(1.75/2)
+    border-width unit(1.75/2)
+    border-style solid
+    border-color transparent
+
+  &:before
+    top 0
+    border-top-color teal
+
+  &:after
+    bottom 0
+    border-bottom-color teal
+
+.ribbon-text
+  display table-cell
+  vertical-align middle
+  background teal
+  padding 0 unit(1)
+  z-index 1
+
+  &:before
+    content ""
+    display block
+    z-index -1
+    position absolute
+    left - unit(1.75/4)
+    bottom - unit(1.75/4)
+    border-width unit(1.75/4)
+    border-style solid
+    border-color transparent
+    border-right-color darken(teal, 10)
