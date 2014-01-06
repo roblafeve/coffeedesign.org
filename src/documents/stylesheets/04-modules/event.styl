@@ -11,7 +11,23 @@
     width unit(15)
 
     .event-content-photo
-      display none
+      display none !important
+
+.event-header
+  position relative
+  padding unit(0.5)
+  margin unit(1)
+  text-align center
+  background teal
+  color white
+  text-transform uppercase
+
+  &:before
+  &:after
+    content ""
+    display block
+    position absolute
+    border-width
 
 .event-content 
   @extend $grid

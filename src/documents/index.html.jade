@@ -22,7 +22,7 @@ section.layout-content-wrapper
         - if (event.date >= document.date && count <= 1)
           .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
             .event-content
-              if event.photo
+              if event.photo && count===0
                 .event-content-photo
                   .photo.sub-circle(style="background-image: url(images/events/#{event.photo})")
                     img(src= event.photo)
