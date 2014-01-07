@@ -7,4 +7,5 @@ location:
 description:
 photo: tad_carpenter.jpg
 register_link: google.com
+isPage: false
 ---

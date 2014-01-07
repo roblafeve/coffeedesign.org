@@ -14,12 +14,14 @@
     "start": "node_modules/docpad/bin/docpad-server"
   },
   "devDependencies": {
+    "docpad-plugin-multimarkdown": "~2.0.0",
     "docpad-plugin-jade": "~2.6.2",
     "docpad-plugin-stylus": "~2.5.0",
     "docpad-plugin-ghpages": "~2.4.1",
-    "docpad-plugin-marked": "~2.1.2",
     "docpad-plugin-moment": "~2.0.2",
     "docpad-plugin-cleanurls": "~2.6.0",
-    "docpad-plugin-coffeescript": "~2.2.3"
+    "docpad-plugin-coffeescript": "~2.2.3",
+    "docpad-plugin-marked": "~2.1.2",
+    "docpad-plugin-text": "~2.3.2"
   }
 }

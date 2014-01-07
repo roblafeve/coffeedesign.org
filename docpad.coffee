@@ -18,21 +18,25 @@ docpadConfig = {
         {raw: 'date', format: 'H:mm', formatted: 'humanTime'}
       ]
 
+
+  documentsPaths: [  # default
+    'documents',
+    'documents/collections/events',
+    'documents/collections/organizers'
+  ]
+
   collections:
     events: ->   
-      @getCollection("documents").findAllLive({relativeOutDirPath: "events"},[date:1])
+      @getCollection("html").findAllLive({relativeOutDirPath: "collections/events"},[date:1])
+    organizers: ->   
+      @getCollection("html").findAllLive({relativeOutDirPath: "collections/organizers"},[sort_order:1])
 
   # # Environments
 
-  # environments:
-  #   development:
-  #     templateData:
-  #       site:
-  #         url: 'http://rob.local:9778'
-  #   static:
-  #     templateData:
-  #       site:
-  #         url: 'http://kc.coffeedesign.org'
+  layoutsPaths: [  # default
+    'layouts',
+    'templates'
+  ]
 }
 
 # Export the DocPad Configuration

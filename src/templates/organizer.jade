@@ -1,0 +1,19 @@
+- var organizers = getCollection('organizers').toJSON()
+
+- for organizer in organizers
+  
+  - var image = "images/" + organizer.image
+  - var name = organizer.name
+  - var bio = organizer.contentRendered
+
+  .organizer
+    .organizer-avatar
+      img.avatar(src=image)
+    .organizer-info
+      h3= name
+      != bio
+      p
+        - for (service in organizer.services)
+          - var account = organizer.services[service]
+          a.icon(href= "http://" + account)
+            span.icon-glyph(class="sub-#{service}")

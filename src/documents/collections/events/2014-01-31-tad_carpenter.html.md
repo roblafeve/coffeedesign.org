@@ -7,4 +7,5 @@ location:
 description: Tad Carpenter is a designer, illustrator, author, and teacher based in Kansas City, Missouri.
 photo: tad_carpenter.jpg
 register_link: google.com
+isPage: false
 ---
