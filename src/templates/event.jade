@@ -25,12 +25,12 @@
               if event.location.name
                 if event.location.link
                   br
-                  a(href="htt://#{event.location.link}")= event.location.name
+                  a(href="http://#{event.location.link}")= event.location.name
                 else
                   br
                   = event.location.name
                 
           if event.register_link
             br
-            a.button(href="htt://#{event.register_link}") Register
+            a.button(href="http://#{event.register_link}") Register
     - count++

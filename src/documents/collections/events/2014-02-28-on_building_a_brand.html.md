@@ -1,11 +1,11 @@
 ---
 title: On Building a Brand
-date: 2014-02-29 08:00
+date: 2014-02-28 08:00
 location: 
-  name: Cremalab (Crossroads)
-  link: google.com
-description:
-photo: tad_carpenter.jpg
-register_link: google.com
+  name:
+  link:
+description: Stay tuned...
+photo:
+register_link:
 isPage: false
 ---
