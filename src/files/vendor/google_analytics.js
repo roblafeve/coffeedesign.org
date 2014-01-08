@@ -3,5 +3,5 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-25001190-2', 'coffeedesign.org');
+ga('create', 'UA-25001190-2', 'kc.coffeedesign.org');
 ga('send', 'pageview');
