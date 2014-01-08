@@ -2,11 +2,12 @@
 name: Kelly Tomlinson
 image: kelly_tomlinson.jpg
 services:
-  rdio: rdio.com/people/username
   twitter: twitter.com/kellytdesign
+  dribbble: dribbble.com/kellytdesign
   website: kellytdesign.com
+  rdio: rdio.com/people/kellytdesign
 
 sort_order: 1
 ---
 
-Kelly Tomlinson is a designer focused on UI & UX, branding, and solving problems; with an undying appreciation for print and package design. She is currently slinging pixels at Cremalab, the Kansas City Chapter Director of Startup Grind, and a KC Startup Weekend organizer. Kelly eats too much Chipotle, watches too many movies, says thank you a lot, and believes in small wins.
+Kelly Tomlinson is a designer focused on UI & UX at [Cremalab](http://cremalab.com) with an undying appreciation for print design. She attends and organizes many things revolved around the design, tech, and entrepreneurial community. Kelly believes in solving problems, sharing stories, saying thank you, and small wins. 
