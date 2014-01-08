@@ -1,11 +1,11 @@
 ---
 title: On Building a Brand
 date: 2014-02-28 08:00
+image:
 location: 
   name:
   link:
-description: Stay tuned...
-photo:
 register_link:
-isPage: false
 ---
+
+Stay tuned...

@@ -1,21 +1,25 @@
 - var events = getCollection('events').toJSON()
 - var count = 0
+
 - for event in events
   - if (event.date >= document.date && count <= 1)
+
+    - var description = event.contentRendered
+    - var image = event.image
+
     .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
       if count===0
         .event-ribbon
           .ribbon
             .ribbon-text This Month
       .event-content
-        if event.photo && count===0
+        if image && count===0
           .event-content-photo
-            .photo.sub-circle(style="background-image: url(images/events/#{event.photo})")
-              img(src= "images/events/" + event.photo)
+            .photo.sub-circle(style="background-image: url(images/events/#{image})")
+              img(src= "images/events/" + image)
         .event-content-info
           h3.event-title= event.title
-          if event.description
-            p.event-description= event.description
+          != description
           hr.sub-small
           if event.date
             p.event-date
