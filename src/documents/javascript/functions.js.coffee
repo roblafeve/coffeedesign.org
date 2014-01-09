@@ -1,3 +1,6 @@
+document.addEventListener "touchstart", (->
+), true
+
 $ ->
 
   $("a#nav-toggle").click ->

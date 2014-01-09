@@ -8,11 +8,12 @@
 
   .organizer
     .organizer-avatar
-      img.avatar(src=image)
+      .photo.sub-circle(style="background-image: url(#{image})")
+        img(src= image)
     .organizer-info
       h3= name
       != bio
-      p
+      .organizer-info-services
         - for (service in organizer.services)
           - var account = organizer.services[service]
           if account
