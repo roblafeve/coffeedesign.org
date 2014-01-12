@@ -1,11 +1,7 @@
-# DocPad Configuration File
-# http://docpad.org/docs/config
-
-# Define the DocPad Configuration
 docpadConfig = {
 
-	plugins:  # example
-    # Disable NIB within the Stylus Plugin
+	plugins:
+
     stylus:
       stylusLibraries:
         nib: true
@@ -19,7 +15,7 @@ docpadConfig = {
       ]
 
 
-  documentsPaths: [  # default
+  documentsPaths: [
     'documents',
     'documents/collections/events',
     'documents/collections/organizers'
@@ -31,13 +27,36 @@ docpadConfig = {
     organizers: ->   
       @getCollection("html").findAllLive({relativeOutDirPath: "collections/organizers"},[sort_order:1])
 
-  # # Environments
-
-  layoutsPaths: [  # default
+  layoutsPaths: [
     'layouts',
     'templates'
   ]
+
+  templateData:
+
+    site:
+
+      url: "http://kc.coffeedesign.org"
+
+      title: "Coffee & Design"
+
+      description: """
+        Coffee & Design is a free, monthly event to connect design professionals in Kansas City.
+        """
+      keywords: """
+        Kansas City, design, professionals, monthly, free, coffee, breakfast
+        """
+
+    # Get the prepared site/document description
+    getPreparedDescription: ->
+      # if we have a document description, then we should use that, otherwise use the site's description
+      @document.description or @site.description
+
+    # Get the prepared site/document keywords
+    getPreparedKeywords: ->
+      # Merge the document keywords with the site keywords
+      @site.keywords.concat(@document.keywords or []).join(', ')
+
 }
 
-# Export the DocPad Configuration
 module.exports = docpadConfig

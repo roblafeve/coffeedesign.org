@@ -1,7 +1,9 @@
 ---
 title: Tad Carpenter
 date: 2014-01-31 08:00
-image: tad_carpenter.jpg
+image:
+  title: Tad Carpenter
+  url: tad_carpenter.jpg
 location: 
   name: Cremalab (Crossroads)
   link: maps.apple.com/?q=Cremalab+1815+Central+St+Kansas+City,+MO+64108

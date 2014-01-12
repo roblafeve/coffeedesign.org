@@ -1,49 +1,55 @@
 .navigation
+  @extend $transition
   display inline-table
   table-layout normal
   width auto
-  margin 0 (- unit())
-  border-spacing unit() 0
+  height 100%
   text-transform uppercase
   font-weight 200
-  color teal
+  color nav-color
   
   > *
     @extend $transition.sub-fast
     display table-cell
+    vertical-align middle
+    padding unit()
+    &:hover
+    &:active
+      background lighten(nav-color, 50)
+    &.active
+      background lighten(nav-color, 45)
 
   a
     text-decoration none
     color inherit
-    @media max-medium
-      display none
 
-  &.sub-mobile
-    display none
-    @media max-medium
-      @extend $transition
-      transform translateY(-150%)
-      background white
-      position fixed
-      z-index 1
-      display table
-      top 4.9em
-      width 100%
-      margin 0
-      border-spacing 0
-      &.open
-        transform translateY(0%)
+  @media max-medium
+    transform translateY(-122%)
+    position fixed
+    z-index -1
+    left 0
+    top 4.9em
+    background white
+    width 100%
+    height auto
+    margin 0
+    border-spacing 0
+    border-bottom 1px solid darken(white, 5)
+    text-align center
+    &.open
+      transform translateY(0%)
     > *
       display block
-      padding unit(1)
-      &:hover
-      &:active
-        background lighten(teal, 45)
 
 #nav-toggle
+  @extend $transition.sub-fast
+  text-decoration none
+  color nav-color
   display none
   @media max-medium
-    display table-cell
-    padding-top 0.35em
+    display inline-block
+    position relative
+    top 0.1em
+    padding unit()
   &.open
-    transform rotateX(180deg) translateY(-0.2em)
+    transform rotate(180deg)

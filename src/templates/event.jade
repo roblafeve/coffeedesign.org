@@ -15,8 +15,8 @@
       .event-content
         if image && count===0
           .event-content-photo
-            .photo.sub-circle(style="background-image: url(images/events/#{image})")
-              img(src= "images/events/" + image)
+            .photo.sub-circle(style="background-image: url(images/events/#{image.url})")
+              img(src= "images/events/" + image.url, alt= image.title )
         .event-content-info
           h3.event-title= event.title
           != description

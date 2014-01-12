@@ -1,18 +1,13 @@
-header.layout-header
-  .layout-header-logo
-    a(href="#home")
-      img.logo(src='images/logo-coffeedesign.svg')
-  .layout-header-nav
-    nav.navigation
-      a(href="#events") Events
-      a(href="#about") About
-      a(href="#sponsors") Sponsors
-      a(href="#organizers") Organizers
-      a(href="#contact") Contact
+.layout-header-wrapper
+  header.layout-header
+    h1.site-title= site.title
+    a.layout-header-logo(href="#home")
+      img.logo(src='images/logo-coffeedesign.svg' alt="Coffee & Design Logo")
+    .layout-header-nav
       a#nav-toggle.icon-glyph.sub-arrow-down(href="#")
-nav.navigation.sub-mobile#navigation-mobile
-  a(href="#events") Events
-  a(href="#about") About
-  a(href="#sponsors") Sponsors
-  a(href="#organizers") Organizers
-  a(href="#contact") Contact
+      nav.navigation
+        a(href="#events") Events
+        a(href="#about") About
+        a(href="#sponsors") Sponsors
+        a(href="#organizers") Organizers
+        a(href="#contact") Contact
