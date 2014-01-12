@@ -99,7 +99,10 @@ input[type="email"]
 //     @extend $skin-text_box.sub-white
 
 // input[type="step"] {}
-// input[type="submit"] {} 
+input[type="submit"]
+  width auto
+  @media max-small
+    width 100%
 
 // input[type="tel"] 
 //   @extend $skin-text_box
