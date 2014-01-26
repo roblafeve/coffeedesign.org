@@ -1,0 +1,10 @@
+- var sponsors = getCollection('sponsors').toJSON()
+
+- for sponsor in sponsors
+  
+  - var name  = sponsor.name
+  - var image = "images/sponsors/" + sponsor.image
+  - var link  = sponsor.link
+
+  a.sponsor(href="http://#{link}")
+    img(src= image, alt= name)

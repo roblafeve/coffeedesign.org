@@ -1,3 +1,4 @@
+
 # Coffee & Design
 
 This is the repo for coffeedesign.org.

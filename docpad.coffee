@@ -26,6 +26,8 @@ docpadConfig = {
       @getCollection("html").findAllLive({relativeOutDirPath: "collections/events"},[date:1])
     organizers: ->   
       @getCollection("html").findAllLive({relativeOutDirPath: "collections/organizers"},[sort_order:1])
+    sponsors: ->   
+      @getCollection("html").findAllLive({relativeOutDirPath: "collections/sponsors"},[sort_order:1])
 
   layoutsPaths: [
     'layouts',
