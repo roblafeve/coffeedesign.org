@@ -15,9 +15,16 @@
       right 0%
       width 100%
       height 100%
-      background-image url("../images/bg-coffee.jpg")
       background-size  cover
       background-position center
+
+    &.sub-intro:before
+      background-image url("../images/bg-coffee.jpg")
+    &.sub-about:before
+      background-image url("../images/bg-computer.jpg")
+      background-position bottom center
+    &.sub-organizers:before
+      background-image url("../images/bg-books.jpg")
 
 .layout-content
   @extend $padding
