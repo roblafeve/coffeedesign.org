@@ -7,23 +7,24 @@
     - var description = event.contentRendered
     - var image = event.image
 
-    .event(class=(count===0 ? 'sub-primary' : 'sub-secondary'))
-      if count===0
+    .event(class=(count == 0 ? 'sub-primary' : 'sub-secondary'))
+      if count == 0
         .event-ribbon
           .ribbon
             .ribbon-text This Month
       .event-content
-        if image && count===0
+        if image && count == 0
           .event-content-photo
             .photo.sub-circle(style="background-image: url(images/events/#{image.url})")
               img(src= "images/events/" + image.url, alt= image.title )
         .event-content-info
           h3.event-title= event.title
-          != description
+          if description != "MultiMarkdown was unable to parse this file."
+            != description
           hr.sub-small
           if event.date
             p.event-date
-              = event.humanDate
+              strong= event.humanDate
               br
               = event.humanTime + " – 10:00 am"
               if event.location.name

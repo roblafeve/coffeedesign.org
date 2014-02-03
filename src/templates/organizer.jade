@@ -17,5 +17,10 @@
         - for (service in organizer.services)
           - var account = organizer.services[service]
           if account
-            a.icon(href= "http://" + account)
-              span.icon-glyph(class="sub-#{service}")
+            if service == "mail"
+              a.icon(href= "mailto:#{account}")
+                span.icon-glyph(class="sub-#{service}")
+            else
+              a.icon(href= "http://" + account)
+                span.icon-glyph(class="sub-#{service}")
+            
