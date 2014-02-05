@@ -23,8 +23,8 @@
   @extend $grid
   table-layout auto
   border-spacing unit(2)
-  @media max-large
-    border-spacing unit(1.5)
+  @media max-small
+    border-spacing unit(0.66)
 
   > *
     @extend $vertical_spacing
@@ -35,6 +35,8 @@
   line-height 0
   width 2*(100/7)%
   padding-top unit(0.35)
+  @media max-small
+    padding-top 1em
   @media (max-width: 59em)
     width 100%
     .photo

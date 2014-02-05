@@ -7,9 +7,12 @@ image:
 location: 
   name: Sprint Accelerator (Crossroads)
   link: maps.apple.com/?q=Sprint+Accelerator+210+W+19th+Terrace+Kansas+City,+MO+64108
-register_link: kccoffeedesign.eventbrite.com
+register_link: www.eventbrite.com/e/coffee-design-building-your-brand-tickets-10470502555
 ---
 
-A panel discussion on what it takes to create a persona around what you do, how you do it, and who you do it for.
+A panel discussion on the importance of design in creating the voice and persona around what you do, why you do it, and who you do it for.
 
-Feat. — Callie England ([Rawxies](http://rawxies.com)), Rick Knudtson ([Flywheel](http://getflywheel.com)), Ali Ebright ([Gimme Some Oven](http://www.gimmesomeoven.com))
+*Featuring:*<br>
+**Callie England**, founder of [Rawxies](http://rawxies.com)<br>
+**Rick Knudtson**, co-founder of [Flywheel](http://getflywheel.com)<br>
+**Ali Ebright**, of [Gimme Some Oven](http://www.gimmesomeoven.com)
