@@ -2,7 +2,7 @@
 - var count = 0
 
 - for event in events
-  - if (event.date >= document.date && count <= 1)
+  - if (event.date >= site.date && count <= 1)
 
     - var description = event.contentRendered
     - var image = event.image
@@ -12,6 +12,7 @@
         .event-ribbon
           .ribbon
             .ribbon-text This Month
+
       .event-content
         if image && count == 0
           .event-content-photo
