@@ -12,7 +12,8 @@
         img(src= image, alt= name)
     .organizer-info
       h3= name
-      != bio
+      if bio != "MultiMarkdown was unable to parse this file."
+        != bio
       .organizer-info-services
         - for (service in organizer.services)
           - var account = organizer.services[service]
