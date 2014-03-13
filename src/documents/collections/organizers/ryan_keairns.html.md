@@ -8,5 +8,5 @@ services:
   linkedin: linkedin.com/pub/ryan-keairns/63/67/269
   mail: ryan@coffeedesign.org
 
-sort_order: 3
+sort_order: 4
 ---
