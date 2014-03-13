@@ -1,5 +1,9 @@
 docpadConfig = {
 
+  regenerateDelay: 0
+  watchOptions:
+    catchupDelay: 0
+
 	plugins:
 
     stylus:
@@ -7,6 +11,9 @@ docpadConfig = {
         nib: true
       stylusOptions:
         compress: true
+
+    livereload:
+      enabled: true
 
     moment:
       formats: [
