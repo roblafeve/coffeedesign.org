@@ -10,4 +10,4 @@ location:
 register_link:
 ---
 
-A panel talk around the journey of getting to where they are now. Geared towards students or anyone looking to make a career change or venture a different direction.
+A panel discussion on the journey from novice to experienced designer, and lessons learned along the way.
