@@ -1,0 +1,37 @@
+.layout-content-wrapper
+  background-color gray
+  overflow hidden
+
+  &.sub-background
+    position relative
+    color white
+    background-color transparent
+    &:before
+      content ""
+      display block
+      position absolute
+      z-index -3
+      top 0%
+      right 0%
+      width 100%
+      height 100%
+      background-size  cover
+      background-position center
+
+    &.sub-intro:before
+      background-image url("../images/bg-coffee.jpg")
+    &.sub-about:before
+      background-image url("../images/bg-computer.jpg")
+      background-position bottom center
+    &.sub-organizers:before
+      background-image url("../images/bg-books.jpg")
+
+.layout-content
+  @extend $padding
+  max-width unit(33.33)
+  margin 0 auto
+
+  text-align center
+
+  &.sub-wide
+    max-width unit(50)

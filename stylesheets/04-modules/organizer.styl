@@ -1,0 +1,40 @@
+.organizer
+  @extend $grid
+  @extend $vertical_spacing.double
+  border-spacing unit(1.2) 0
+  @media max-small
+    display block
+  
+  &:nth-child(odd)
+    direction rtl
+    @media max-small
+      direction ltr
+    .organizer-info
+      text-align right
+      direction ltr
+
+
+.organizer-avatar
+  width unit(5)
+  padding-top unit(0.25)
+  vertical-align middle
+  @media max-small
+    display inline-block
+
+.organizer-info
+  @extend $vertical_spacing
+  text-align left
+  vertical-align middle
+  @media max-small
+    display block
+    text-align center !important
+
+.organizer-info-services
+  @extend $vertical_spacing
+  .icon-glyph
+    @extend $transition.sub-fast
+    padding 0.5em
+    border-radius 200px
+    &:hover
+    &:active
+      background rgba(black, 0.25)

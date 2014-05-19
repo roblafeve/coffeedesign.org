@@ -1,0 +1,58 @@
+body
+  font 100%/1.5 "Lato",sans-serif
+  color black
+
+heading-scale( 1.315, 1.5, 0, 0)
+@media max-small
+  heading-scale( 1.315, 1.5, 0, -1)
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Montserrat', sans-serif
+  text-transform uppercase
+  font-weight 700
+  line-height 1.2
+
+h1.sub-title
+  @extend h3
+
+h1.site-title
+  display none
+
+p
+  @extend $vertical_spacing.text
+
+hr
+  @extend $vertical_spacing.text
+  display inline-block
+  width 60%
+  border-style solid
+  border-color inherit
+  border-width 1px 0 0
+  margin-bottom -0.4em
+
+  &.sub-small
+    width 20%
+
+.sub_heading
+  @extend h4
+  line-height 1.5
+  font-family "Merriweather"
+  font-weight 300
+  font-style italic
+  font-size 1.5em
+  text-transform none
+  @media max-small
+    font-size 1.2em
+
+br
+  &.sub-large
+    @media (max-width: 53em)
+      display none
+  &.sub-small
+    @media min-small
+      display none
+
+span
+  &.heart
+    color red
+    font-size 1.2em

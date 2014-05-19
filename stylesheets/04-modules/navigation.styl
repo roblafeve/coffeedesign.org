@@ -1,0 +1,55 @@
+.navigation
+  @extend $transition
+  display inline-table
+  table-layout normal
+  width auto
+  height 100%
+  text-transform uppercase
+  font-weight 200
+  color nav-color
+  
+  > *
+    @extend $transition.sub-fast
+    display table-cell
+    vertical-align middle
+    padding unit()
+    &:hover
+    &:active
+      background lighten(nav-color, 50)
+    &.active
+      background lighten(nav-color, 45)
+
+  a
+    text-decoration none
+    color inherit
+
+  @media max-medium
+    transform translateY(-122%)
+    position fixed
+    z-index -1
+    left 0
+    top 4.9em
+    background white
+    width 100%
+    height auto
+    margin 0
+    border-spacing 0
+    border-bottom 1px solid darken(white, 5)
+    text-align center
+    &.open
+      transform translateY(0%)
+    > *
+      display block
+
+#nav-toggle
+  @extend $transition.sub-fast
+  text-decoration none
+  color nav-color
+  display none
+  @media max-medium
+    display inline-block
+    position relative
+    top 0.1em
+    padding unit()
+  &.open
+    transform rotate(180deg)

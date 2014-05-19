@@ -1,0 +1,15 @@
+.layout-events
+  @extend $grid
+  table-layout auto
+  @extend $vertical_spacing.double
+  border-spacing unit(1) 0
+  @media max-small
+    border-spacing 0
+
+  .event
+    @extend $vertical_spacing
+    // @media max-large
+    //   width 50%
+    @media max-medium
+      display block
+      width 100%

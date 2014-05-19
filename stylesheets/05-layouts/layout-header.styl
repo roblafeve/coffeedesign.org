@@ -1,0 +1,23 @@
+.layout-header-wrapper //This allows for z-index re-sorting of header and navigation
+  position fixed
+  z-index 1
+
+.layout-header
+
+  // Stuff
+  @extend $grid
+  height 5em
+
+  // Background
+  background white
+  border-bottom 1px solid darken(white, 5)
+
+  > *
+    vertical-align middle
+
+.layout-header-logo
+  padding 0 unit() .6em
+  width 16em
+
+.layout-header-nav
+  text-align right

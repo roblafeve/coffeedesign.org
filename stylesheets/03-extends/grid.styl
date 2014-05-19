@@ -1,0 +1,16 @@
+$grid
+  display table
+  table-layout fixed
+  width 100%
+  border-spacing 0
+  direction ltr
+  &.inline
+    @extend $grid
+    display inline-table
+    width auto
+    table-layout auto
+  > *
+    display table-cell
+    vertical-align top
+    height 100%
+    border-spacing 0

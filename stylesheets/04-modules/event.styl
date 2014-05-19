@@ -1,0 +1,50 @@
+.event
+  position relative
+
+  &.sub-primary
+    text-align left
+    @media (max-width: 59em)
+      text-align center
+
+  &.sub-secondary
+    width unit(15)
+
+    .event-content-photo
+      display none !important
+
+.event-ribbon
+  position absolute
+  top - unit(0.75)
+  left - unit(1.75/4)
+
+.event-content 
+  @extend $grid
+  table-layout auto
+  border-spacing unit(2)
+  background white
+  box-shadow 0 1px 4px rgba(black, 0.25)
+  @media max-small
+    border-spacing unit(0.66)
+
+  > *
+    @extend $vertical_spacing
+    @media (max-width: 59em)
+      display block
+
+.event-content-photo
+  line-height 0
+  width 2*(100/7)%
+  padding-top unit(0.35)
+  @media max-small
+    padding-top 1em
+  @media (max-width: 59em)
+    width 100%
+    .photo
+      width 30%
+      @media max-small
+        width 50%
+
+// .event-content-info
+
+.event-date
+  text-transform uppercase

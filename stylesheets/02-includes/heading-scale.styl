@@ -1,0 +1,11 @@
+heading-scale( ratio = 1.2, top = 5, bottom = -0.125, shift = 0 )
+
+  headings()
+    power = 6 - (i - shift)
+    size = (ratio**power)em
+    font-size size
+    margin (ratio/size)*top 0 (ratio/size)*bottom
+
+  for i in (1..6)
+    h{i}
+      headings()

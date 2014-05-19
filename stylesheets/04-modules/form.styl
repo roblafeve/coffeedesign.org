@@ -1,0 +1,172 @@
+form
+  @extend $vertical_spacing
+
+.form-fields
+  display inline-table
+  width 100%
+  max-width unit(20)
+  border-spacing unit(0.5)
+
+.form-fields-field
+  @extend $vertical_spacing
+  display table-cell
+  @media max-small
+    display block
+  &.sub-primary
+    width 100%
+  > *
+    width 100%
+
+$form_base 
+  font-size inherit
+  font inherit
+  font-weight 500
+    
+// Form
+form 
+  @extend $vertical_spacing
+
+
+// Fieldset
+fieldset 
+legend 
+  @extend $form_base
+
+
+// Label
+label 
+
+// Input
+input 
+  @extend $form_base
+  @extend $vertical_spacing
+
+// input[type="button"] 
+// input[type="checkbox"]
+
+// input[type="color"]
+// input[type="date"]
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+    
+
+// input[type="datetime-local"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="datetime"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+input[type="email"]
+  @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="file"] 
+// input[type="hidden"] 
+// input[type="image"] 
+// input[type="max"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="min"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="month"] 
+// input[type="number"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="password"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="radio"] {}
+// input[type="range"] {}
+// input[type="reset"] {}
+// input[type="search"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="step"] {}
+input[type="submit"]
+  width auto
+  @media max-small
+    width 100%
+
+// input[type="tel"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="text"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="time"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="url"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="value"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+// input[type="week"] 
+//   @extend $skin-text_box
+//   &.sub-white
+//     @extend $skin-text_box.sub-white
+
+
+// // Select
+// select 
+//   @extend $form_base
+
+// datalist 
+//   @extend $form_base
+
+// option 
+//   @extend $form_base
+
+// optgroup 
+//   @extend $form_base
+
+
+// // Text Area
+// textarea 
+//   @extend $form_base
+//   @extend $skin-text_box
+//   @extend $vertical_spacing
+//   display block
+//   resize none
+//   height unit(5)
+//   @media (max-width $small) 
+//     height unit(10)
+  
+
+
+// Button
+// button 
+
+// // Misc
+// keygen 
+// meter 
+// output 
+// progress

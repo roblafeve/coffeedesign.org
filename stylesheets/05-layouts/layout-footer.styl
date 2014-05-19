@@ -1,0 +1,23 @@
+.layout-footer
+  @extend $grid
+  border-spacing unit()
+  background off-white
+  color gray-dark
+  @media max-small
+    border-spacing unit(0.5) unit()
+
+.layout-footer-column
+  vertical-align middle
+  @extend $vertical_spacing
+  @media max-small
+    display block
+    text-align center
+  &.sub-right
+    text-align right
+    @media max-small
+      text-align center
+
+  iframe
+    position relative
+    top 4px
+    width 50px

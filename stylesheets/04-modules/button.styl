@@ -1,0 +1,16 @@
+.button
+  @extend $skin-text_box
+  display inline-block
+  color white
+  font-weight 700
+  text-transform uppercase
+  text-decoration none
+  background violet
+  box-shadow none
+  cursor pointer
+  &:hover
+    box-shadow 0 0 0 4px rgba(violet, 0.25)
+  &.sub-white
+    @extend $skin-text_box.sub-white
+    box-shadow inset 0 0 0 2px
+    background transparent
